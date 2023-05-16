@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İLETİŞİM</title>
+    <link rel="stylesheet" href="İLETİŞİM.CSS">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script src="İLETİŞİM.js"></script>
+</head>
+<body>
+    <div id="app">
+    <form id="contact-form" action="sonuc.html" method="POST">
+        <h2>İletişim Formu</h2>
+
+        <div>
+            <label for="name">Adınız:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+            <label for="surname">Soyadınız:</label>
+            <input type="text" id="surname" name="surname" required>
+        </div>
+
+        <label for="gender">Cinsiyet:</label>
+           <select id="gender" name="gender" required>
+           <option value="">Seçiniz</option>
+           <option value="male">Erkek</option>
+           <option value="female">Kadın</option>
+           <option value="other">Diğer</option>
+  </select>
+
+        <label for="phone">Telefon Numarası:</label>
+           <input type="tel" id="phone" name="phone" required>
+
+        <div>
+            <label for="email">E-posta Adresiniz:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="subject">Konu:</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+
+        <div>
+            <label for="message">Mesajınız:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Gönder</button>
+            <button type="reset">Temizle</button>
+        </div>
+
+    </form>
+    <div id="display-info"></div>
+</body>
+</html>

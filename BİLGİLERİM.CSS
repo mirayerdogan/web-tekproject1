@@ -9,10 +9,15 @@ body{
 
 header{
 
-    background-color: lightskyblue;
+    background-color:lightsteelblue;
     color:white;
     padding: 20px;
 
+}
+
+p{
+
+    color: black;
 }
 
 h1{
@@ -58,7 +63,7 @@ section{
 
     padding: 20px;
     margin-bottom: 0;
-    background-color:lightskyblue;
+    background-color:lightsteelblue;
     color:white;
 
 }

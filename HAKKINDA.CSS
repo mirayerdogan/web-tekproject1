@@ -1,23 +1,30 @@
 body{
 
-    background-color:rgb(0, 85, 255);
+    background-color:lightsteelblue;
     background-size: cover;
     background-position: top center;
     position: relative;
+    font-size: 17px;
 
 }
 
 .hed{
 
-    background-color:rgb(0, 85, 255);
-    height: 200vh;
+    background-color:lightsteelblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .container{
 
-    background-color:yellow;
-    border: solid 10px rgb(0, 85, 255);
+    width: 100%;
+    height: 100%;
+    background-color:lightsteelblue;
+    border: solid 0px lightsteelblue;
 
 }
 
@@ -32,3 +39,7 @@ img{
 
 }
 
+.bos{
+
+    margin-bottom: 0;
+}
