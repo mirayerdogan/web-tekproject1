@@ -1,6 +1,6 @@
 body {
 	font-family: Arial, sans-serif;
-	background-color: #f7f7f7;
+	background-color:#f2f2f2;
 }
 
 header {
@@ -17,24 +17,26 @@ h1 {
 main {
 	margin: 20px;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-#movies, #sports {
+#Movies, #Music, #Sports {
+	display: inline-block;
+	vertical-align: top;
 	width: 45%;
 	padding: 20px;
 	background-color: #f2f2f2;
+	margin-top: 10px;
 	border-radius: 10px;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-}
-
-#movies h2, #sports h2 {
+  }
+  
+#Movies h2, #Music h2, #Sports h2 {
 	color: #1c4587;
 	margin-top: 0;
 }
 
-.movie-item, .sport-item {
+.movie-item, .music-item, .sport-item {
 	margin: 10px;
 	padding: 10px;
 	background-color: #f2f2f2;
@@ -42,11 +44,11 @@ main {
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
 }
 
-.movie-item h3, .sport-item h3 {
+.movie-item h3, .music-item h3, .sport-item h3 {
 	margin: 0;
 	color: #1c4587;
 }
 
-.movie-item p, .sport-item p {
+.movie-item p, .music-item p, .sport-item p {
 	margin: 5px 0;
 }

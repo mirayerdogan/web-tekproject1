@@ -44,12 +44,17 @@ const app = new Vue({
           subject.trim() === '' ||
           message.trim() === ''
         ) {
-          this.displayInfo = 'Lütfen tüm alanları doldurun.';
+          this.displayInfo = 'Lütfen tüm alanları doldurunuz.';
           return;
         }
   
         if (!this.validateEmail(email)) {
-          this.displayInfo = 'Geçerli bir e-posta adresi girin.';
+          this.displayInfo = 'Geçerli bir e-posta adresi giriniz.';
+          return;
+        }
+
+        if (!this.validatePhone(phone)) {
+          this.displayInfo = 'Geçerli bir telefon numarası giriniz. (11 haneli).';
           return;
         }
   
@@ -89,4 +94,10 @@ const app = new Vue({
         return re.test(email);
       },
     },
+
+    validatePhone(phone) {
+      const re = /^\d{11}$/;
+      return re.test(phone);
+    },
+
   });

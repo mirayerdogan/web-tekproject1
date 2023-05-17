@@ -1,54 +1,62 @@
-const apiKey="ac705fa1f2msh768826e19727a31p106927jsnb7ae3df14f62";
-const movieUrl="'https://movies-tv-shows-database.p.rapidapi.com/";
-const SportUrl="https://www.thesportsdb.com";
+var movies = [
+  { title: "The Parazit", director: "Bong Joon-ho", year: 2019 },
+  { title: "Dangal", director: "Nitesh Tiwari", year: 2016 },
+  { title: "The Martian", director: "Ridley Scott", year: 2015 },
+  { title: "Bird Box", director: "Susanne Bier", year: 2018 },
+  { title: "Escape Room", director: "Adam Robitel", year: 2019 },
+  { title: "Friends", director: " David Crane , Marta Kauffman", year: 1994},
+  { title: "Suits", director: "Aaron Korsh", year: 2011}
+];
 
-function getMovies(){
+var sports = [
+  { name: "Tenis"},
+  { name: "Basketbol"},
+  { name: "Plates"},
+  { name: "Koşu"},
+  { name: "Yüzme"},
+  { name: "Voleybol"},
+  { name: "Kayak"}
 
-    fetch(movieUrl)
+];
 
-    .then(response => response.json())
-		
-    .then(data => {
-        const movieList = document.getElementById('movie-list');
-        data.results.slice(0, 6).forEach(movie => {
-          const movieItem = document.createElement('div');
-          movieItem.classList.add('movie-item');
-          movieItem.innerHTML = `
-            <h3>${movie.title}</h3>
-            <p>${movie.overview}</p>
-            <p>Vizyon Tarihi: ${movie.release_date}</p>
-            <p>Ortalama Puan: ${movie.vote_average}</p>
-          `;
-          movieList.appendChild(movieItem);
-        });
-      })
-      .catch(error => {
-        console.log('Bir hata oluştu: ', error);
-      });
+var music = [
+  { title: "Derinlerde", artist: "Cem Adrian"},
+  { title: "Bad Boy", artist: "Marwa Loud"},
+  { title: "Fırtınadayım", artist: "Mabel Matiz"},
+  { title: "Anlayamazsın", artist: "Seksendört"},
+  { title: "Calm Down", artist: "Rema, Selena Gomez"},
+  { title: "Middle of the Night", artist: "Elley Duhé"},
+  { title: "Tac Mahal", artist: "Buray"},
+  { title: "Shape of You", artist: "Ed Sheeran "},
+  { title: "Astronaut in the Ocean", artist: "Masked Wolf"}
+];
+
+function showMovies() {
+  var movieListHTML = "";
+  for (var i = 0; i < movies.length; i++) {
+    movieListHTML += '<div class="movie-item"><h3>' + movies[i].title + '</h3><p>Yönetmen: ' + movies[i].director + '</p><p>Yıl: ' + movies[i].year + '</p></div>';
   }
-  
-  function getSports() {
-    fetch(sportUrl)
-      .then(response => response.json())
-      .then(data => {
-        const sportList = document.getElementById('sport-list');
-        data.sports.slice(0, 6).forEach(sport => {
-          const sportItem = document.createElement('div');
-          sportItem.classList.add('sport-item');
-          sportItem.innerHTML = `
-            <h3>${sport.strSport}</h3>
-            <p>${sport.strSportDescription}</p>
-          `;
-          sportList.appendChild(sportItem);
-        });
-      })
-      .catch(error => {
-        console.log('Bir hata oluştu: ', error);
-      });
-  }
-  
-  window.onload = function() {
-    getMovies();
-    getSports();
-
+  document.getElementById("Movie-list").innerHTML = movieListHTML;
 }
+
+function showSports() {
+  var sportListHTML = "";
+  for (var i = 0; i < sports.length; i++) {
+    sportListHTML += '<div class="sport-item"><h3>' + sports[i].name + '</h3><p>' + '</p></div>';
+  }
+  document.getElementById("Sports-list").innerHTML = sportListHTML;
+}
+
+function showMusic() {
+  var musicListHTML = "";
+  for (var i = 0; i < music.length; i++) {
+    musicListHTML += '<div class="music-item"><h3>' + music[i].title + '</h3><p>Sanatçı: ' + music[i].artist + '</p></div>';
+  }
+  document.getElementById("Music-list").innerHTML = musicListHTML;
+}
+
+window.onload = function() {
+  showMovies();
+  showSports();
+  showMusic();
+};
