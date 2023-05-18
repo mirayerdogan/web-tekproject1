@@ -73,7 +73,7 @@ const app = new Vue({
         localStorage.setItem('formResult', JSON.stringify(formResult));
   
         
-        window.location.href = 'sonuc.html';
+       window.Location.href='sonuc.html';
   
         
         this.resetForm();
