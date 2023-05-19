@@ -1,54 +1,61 @@
 body {
 	font-family: Arial, sans-serif;
-	background-color:#f2f2f2;
-}
+	padding: 20px;
+	background-color: #1c4587;
+  }
 
-header {
+  header {
 	background-color: #1c4587;
 	color: #fff;
 	padding: 20px;
 	text-align: center;
-}
+  }
 
-h1 {
-	margin: 0;
-}
-
-main {
+  main {
 	margin: 20px;
 	display: flex;
 	justify-content: space-between;
-}
+  }
 
-#Movies, #Music, #Sports {
+  h1 {
+	margin: 0;
+	color: white;
+  }
+
+  h2 {
+	color: #333;
+  }
+
+  ul {
+	list-style-type: circle;
+	margin-left: 20px;
+  }
+
+  .liste-container {
 	display: inline-block;
 	vertical-align: top;
-	width: 45%;
+	width: 30%;
 	padding: 20px;
 	background-color: #f2f2f2;
-	margin-top: 10px;
+	margin-top: 20px;
 	border-radius: 10px;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   }
-  
-#Movies h2, #Music h2, #Sports h2 {
+
+  .liste-container h2 {
 	color: #1c4587;
 	margin-top: 0;
-}
+  }
 
-.movie-item, .music-item, .sport-item {
-	margin: 10px;
+  .liste-item {
+	margin: 10px 0;
 	padding: 10px;
 	background-color: #f2f2f2;
 	border-radius: 5px;
-	box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
-}
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+	line-height: 2;
+  }
 
-.movie-item h3, .music-item h3, .sport-item h3 {
-	margin: 0;
-	color: #1c4587;
-}
-
-.movie-item p, .music-item p, .sport-item p {
-	margin: 5px 0;
-}
+  .liste-container ul {
+	margin-top: 10px;
+  }
