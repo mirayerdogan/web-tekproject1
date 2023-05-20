@@ -2,13 +2,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color:ghostwhite;
+  background-color:#f1f1f1;
 }
 
 header {
-  background-color:ghostwhite;
-  color: black;
-  padding: 20px;
+  background-color:#f1f1f1;
+  color:black;
+  padding: 0;
+  
 }
 
 header h1 {
@@ -22,17 +23,35 @@ h4 {
 }
 
 #nüfus, #gezilecek-yerler{
-  color: black;
+  color:black;
   margin-left: 0px;
   
 }
+
+#nüfus h2{
+
+  color:black;
+}
+
+#nüfus p{
+
+  color:black;
+
+}
+
+#gezilecek-yerler ul li a{
+
+  color:black;
+}
 nav ul {
+
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 nav ul li {
+
   display: inline-block;
   margin-right: 20px;
 }
@@ -42,7 +61,8 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-  color: black;
+
+  color:black;
   text-decoration: none;
 }
 

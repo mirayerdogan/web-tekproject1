@@ -21,11 +21,14 @@ const filmler = [
   'Recep İvedik',
   'Hababam Sınıfı',
   'Awake',
-  'Açlık'
+  'Açlık',
+  'Derinlerdeki Dehşet',
+  'Deliha'
 ];
 
 const müzikler = [
   'Derinlerde',
+  'Tourner Dans Le Vide',
   'Bad Boy',
   'Anlayamazsın',
   'Calm Down',
@@ -42,7 +45,8 @@ const müzikler = [
   'Sana Çıkıyor Yollar',
   'Alışamadım',
   'Sabır Ver',
-  'Love Story'
+  'Love Story',
+  'Yalan'
 ];
 
 const sporlar = [
@@ -52,20 +56,12 @@ const sporlar = [
   'Koşu',
   'Yüzme',
   'Voleybol',
-  'Kayak'
+  'Kayak',
+  'Bowling',
+  'Paraşüt',
+  'Paten'
+  
 ];
-
-const doğa = [
-  'Gökyüzü',
-  'Orman',
-  'Ağaçlar',
-  'Güneş',
-  'Yağmur',
-  'Bitkiler',
-  'Hayvanlar',
-  'Deniz',
-];
-
 
 
 fetch('https://api.themoviedb.org/3/movie/550?api_key=273d5a63f37d57017dad56e3a2d0ef31', {
