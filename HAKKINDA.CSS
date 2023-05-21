@@ -1,0 +1,45 @@
+body{
+
+    background-color:lightsteelblue;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    font-size: 17px;
+
+}
+
+.hed{
+
+    background-color:lightsteelblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+
+    width: 100%;
+    height: 100%;
+    background-color:lightsteelblue;
+    border: solid 0px lightsteelblue;
+
+}
+
+.container h4{
+
+   color:brown;
+}
+
+img{
+
+   float:right;
+
+}
+
+.bos{
+
+    margin-bottom: 0;
+}
