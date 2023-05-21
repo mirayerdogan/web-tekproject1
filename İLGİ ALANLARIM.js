@@ -117,4 +117,10 @@ fetch('https://api-football-v1.p.rapidapi.com/v3/timezone', {
     sporListesi.appendChild(li);
   });
 })
+<<<<<<< HEAD
 .catch(error => console.log(error));
+=======
+.catch(error => console.log(error));
+
+
+>>>>>>> eddb2d407511fe63b44bbce22cafb5d19761df9e
