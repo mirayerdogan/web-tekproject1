@@ -1,7 +1,7 @@
 const filmListesi = document.getElementById('filmListesi');
 const müzikListesi = document.getElementById('müzikListesi');
 const sporListesi = document.getElementById('sporListesi');
-const doğaListesi = document.getElementById('doğaListesi');
+
 
 const filmler = [
   'The Parazit',
